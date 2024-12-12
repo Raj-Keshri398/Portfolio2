@@ -1,0 +1,786 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+  color: #ededed;
+  background: #183649;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  width: 100%;
+}
+
+.logo{
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo span {
+  color: #0ef;
+}
+  
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 45px;
+  transition: .3s;
+}
+
+.navbar a:hover{
+  color: #0ef;
+}
+
+.home{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 70px 7%;
+  height: 620px;
+}
+
+.home-content{
+  width: 60%;
+}
+
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.home-content h3 span{
+  color: #0ef;
+}
+
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+}
+
+.home-content p{
+  font-size: 20px;
+}
+
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #0ef;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover{
+  background: #0ef;
+  color: #081b29;
+  box-shadow: 0 0 10px #0ef;
+}
+
+.home_img{
+  width: 40%;
+}
+
+.home_img img{
+  margin: 5%;
+  padding: 5%;
+  height: 400px;
+}
+
+.hamburger-menu{
+  display: none;
+}
+
+/* Start About Section Css code */
+
+.about{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    height: 620px;
+    padding: 100px;
+  }
+
+.about-img {
+    width: 30%;
+    height: 470px;
+    float: left;
+    margin-right: 50px;
+}
+
+.about-text {
+    width: 60%;
+    height: 470px;
+    float: right;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+
+.about-text h2{
+    font-size: 60px;
+
+}
+
+.about-text h2 span{
+    color: #0ef;
+}
+
+
+.about-text p{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+/* End About Section CSS Code */
+
+/*Start My Service Section Css Code */
+
+.Service {
+    width: 100%;
+    height: 520px;
+    padding: 20px;
+}
+
+.sub-title{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.sub-title span{
+    color: #0ef;
+}
+
+.service-list{
+    display: flex;
+    padding: 30px;
+    width: 99%;
+}
+
+.box1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 33%;
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 15px #012290f7,
+                1px 1px 10px #fff;
+}
+
+.service-list .box1 i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.service-list .box1 h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.service-list .box1:hover{
+    transform: translateY(-10px);
+}
+
+/* End My Service Section CSS code */
+
+/* Start Skills Section Coding */
+
+.skill-section{
+    width: 100%;
+    height: auto;
+    padding: 80px;
+ }
+
+.header-skill-head {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+
+.header-skill-head h1{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header-skill-head h1 span{
+    color: #0ef;
+}
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 15px;
+}
+
+.skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.percent{
+    font-weight: bold;
+}
+
+.bar{
+    width: 100%;
+    height: 10px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #0ef;
+    border-radius: 25px;
+}
+
+.skill-bar .bar .html{
+    width: 90%;
+    animation: html 4s;
+}
+
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.skill-bar .bar .css{
+    width: 50%;
+    animation: css 3s;
+}
+
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+.skill-bar .bar .javascript{
+    width: 60%;
+    animation: javascript 3s;
+}
+
+@keyframes javascript{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+.skill-bar .bar .mysql{
+    width: 70%;
+    animation: mysql 3s;
+}
+
+@keyframes mysql{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+.skill-bar .bar .java{
+    width: 70%;
+    animation: java 3s;
+}
+
+@keyframes java{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+.skill-bar .bar .php{
+    width: 70%;
+    animation: php 3s;
+}
+
+@keyframes php{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+/* End MY Skills Section coding */
+
+/* Start Project Section Coding */
+
+.Project-section{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+ }
+
+.Project-Heading {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+
+.Project-Heading h1{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Project-Heading h1 span{
+    color: #0ef;
+}
+
+.Project-Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-img {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.project-img img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+
+.project-img:hover img{
+  transform: scale(1.1);
+}
+
+.project-img:hover .layer{
+  height: 100%;
+}
+ /*End Project Section coding */
+
+ /*Start contact section coding */
+
+ .contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    margin-top: 50px;
+ }
+
+ .contact-text {
+  width: 40%;
+  height: 400px;
+  padding: 10px;
+  float: left;
+ }
+
+ .contact-text h2{
+    text-align: center;
+    font-size: 50px;
+ }
+
+ .contact-text h2 span{
+    color: #0ef;
+ }
+
+ .contact-text h4{
+    margin: 15px 0;
+    color: rgb(228,228,228);
+    font-size: 20px;
+    font-weight: 600;
+ }
+
+ .contact-text p{
+    color: rgb(177, 177, 177);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+ }
+
+ .contact-list{
+    margin-bottom: 3rem;
+ }
+
+ .contact-list li{
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+ }
+
+ .contact-list i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    margin-right: 10px;
+ }
+
+ .Contact-btn{
+   background: darkred;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 18px;
+   border-radius: 18px;
+ }
+
+.contact-form-box{
+  width: 40%;
+  height: 400px;
+  padding: 10px;
+  float: right;
+  margin-right: 40px;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .contact-form-box h1{
+  text-align: center;
+ }
+
+ .textbox {
+  height: 40px;
+ }
+
+ .textbox, .textboxarea {
+  width: 100%;
+  background: linear-gradient(rgb(177, 177, 177));
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  border: 2px solid black;
+ }
+
+ .textboxarea {
+  height: 120px;
+ }
+
+ .send-btn, .reset-btn{
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+ .send-btn {
+  margin-left: 25%;
+ }
+
+ .reset-btn {
+  margin-left: 10%;
+ }
+
+/* End Contact Section Coding */
+
+/* Start Footer Coding here */
+
+.footer{
+  padding: 20px;
+  background: darkred;
+  
+  
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+
+
+
+
+
+/* Media Queries for Responsiveness */
+
+/* Up to 767px (Mobile) */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+  
+  .header {
+    justify-content: space-between;
+  }
+  
+  .hamburger-menu {
+    display: block;
+  }
+  
+  .navbar.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    width: 60%;
+    background: none;
+    height: auto;
+    z-index: 99;
+  }
+
+  .navbar.show a {
+    margin: 10px 0;
+  }
+
+  /* Start Home Section Responsive Code */
+
+  .home {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+  }
+
+  .home-content {
+    width: 100%;
+    padding: 0 7%;
+    text-align: left; /* Center text */
+  }
+
+  .home_img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /* End Home Section Responsive Code */
+
+  /* Responsive for about section */
+
+  .about{
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+ }
+
+  .about-img {
+    width: 90%;
+    height: 400px;
+    margin-right: 0;
+  }
+
+  .about-img img{
+    width: 100%;
+    height: 400px;
+  }
+
+  .about-text {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .about-text h2{
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .about-text h4{
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .about-text p{
+    font-size: 15px;
+    font-family: Calibri;
+}
+
+ /* End Responsive For About Section */
+
+/* Start Responsive For MyService Section */
+ 
+ .Service {
+    margin-top: 100px;
+    height: auto;
+    padding: 0;
+  }
+  .sub-title {
+    font-size: 70px;
+    margin-bottom: 10px;
+  }
+
+  .service-list{
+    display: inline-grid;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .box1 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%; 
+  }
+
+  .service-list .box1 h2 {
+    font-size: 20px;
+    
+  }
+  /* End Responsive for My Service Section Css coding */
+
+  /* Start MySkills Section responsive 8 */
+
+  .skill-section{
+    padding: 20px;
+  }
+
+  .skill-main{
+    grid-template-columns: repeat(1,1fr);
+    padding: 20px;
+  }
+
+  /* End MySkills Section responsive 8 */
+
+
+  /* Start Responsive for Contact */
+
+  .contact{
+    display: Grid;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+  .contact-text {
+   width: 100%;
+   height: 450px;
+  }
+
+  .Contact-btn{
+   display: inline-block;
+   width: 80%;
+   height: 40px;
+   font-size: 22px;
+   padding: 5px;
+   border-radius: 18px;
+ }
+
+ .contact-list li{
+    text-align: left;
+ }
+
+ .contact-form-box{
+  width: 100%;
+  height: 450px;
+ }
+
+ .send-btn, .reset-btn {
+  margin-left: 3%;
+  border-radius: 12px;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 20px;
+ }
+
+}
