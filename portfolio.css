@@ -42,17 +42,18 @@ body{
 }
 
 .navbar a {
-  display: inline-block;
-  font-size: 25px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  margin-left: 45px;
-  transition: .3s;
+    display: inline-block;
+    font-size: 25px;
+    color: #fff; /* White for visibility against the dark background */
+    text-decoration: none; /* Removes underline */
+    font-weight: 500;
+    margin-left: 45px;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
-.navbar a:hover{
-  color: #0ef;
+.navbar a:hover {
+    color: #0ef; /* Highlight on hover */
+    text-decoration: underline; /* Makes it clearer as a link */
 }
 
 .home{
@@ -590,197 +591,127 @@ body{
   height: 60px;
 }
 
-
-
-
-
-
-/* Media Queries for Responsiveness */
-
 /* Up to 767px (Mobile) */
 @media only screen and (max-width: 767px) {
-  .navbar {
-    display: none;
-  }
-  
   .header {
-    justify-content: space-between;
-  }
-  
-  .hamburger-menu {
-    display: block;
-  }
-  
-  .navbar.show {
-    display: flex;
+    padding: 10px 5%;
     flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 10px;
-    right: 60px;
-    width: 60%;
-    background: none;
-    height: auto;
-    z-index: 99;
+    align-items: flex-start;
   }
 
-  .navbar.show a {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .navbar a {
     margin: 10px 0;
-  }
-
-  /* Start Home Section Responsive Code */
-
-  .home {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 250px;
+    font-size: 20px;
   }
 
   .home-content {
     width: 100%;
-    padding: 0 7%;
-    text-align: left; /* Center text */
+  }
+
+  .home-content h1 {
+    font-size: 40px;
+  }
+
+  .home-content h3 {
+    font-size: 24px;
   }
 
   .home_img {
-    width: 100%;
-    margin-top: 20px;
+    display: none; /* Hide large images on small screens */
   }
-  /* End Home Section Responsive Code */
 
-  /* Responsive for about section */
-
-  .about{
-    height: auto;
+  .about {
     flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    padding: 10px;
- }
-
-  .about-img {
-    width: 90%;
-    height: 400px;
-    margin-right: 0;
+    padding: 20px;
   }
 
-  .about-img img{
-    width: 100%;
-    height: 400px;
-  }
-
+  .about-img,
   .about-text {
     width: 100%;
-    height: auto;
-    margin-left: 0;
-    padding: 10px;
-    margin-top: 10px;
-  }
-
-  .about-text h2{
-    font-size: 80px;
+    margin: 0;
     text-align: center;
   }
 
-  .about-text h4{
-    font-size: 30px;
-    text-align: left;
-  }
-
-  .about-text p{
-    font-size: 15px;
-    font-family: Calibri;
-}
-
- /* End Responsive For About Section */
-
-/* Start Responsive For MyService Section */
- 
- .Service {
-    margin-top: 100px;
-    height: auto;
-    padding: 0;
-  }
-  .sub-title {
-    font-size: 70px;
-    margin-bottom: 10px;
-  }
-
-  .service-list{
-    display: inline-grid;
-    padding: 30px;
-    width: 100%;
+  .service-list {
+    flex-direction: column;
   }
 
   .box1 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%; 
-  }
-
-  .service-list .box1 h2 {
-    font-size: 20px;
-    
-  }
-  /* End Responsive for My Service Section Css coding */
-
-  /* Start MySkills Section responsive 8 */
-
-  .skill-section{
-    padding: 20px;
-  }
-
-  .skill-main{
-    grid-template-columns: repeat(1,1fr);
-    padding: 20px;
-  }
-
-  /* End MySkills Section responsive 8 */
-
-
-  /* Start Responsive for Contact */
-
-  .contact{
-    display: Grid;
-    text-align: center;
     width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .skill-main {
+    grid-template-columns: 1fr;
+  }
+
+  .Project-Container {
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-text,
+  .contact-form-box {
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer {
+    text-align: center;
     height: auto;
-    padding: 10px;
-    margin-top: 50px;
+  }
+}
+
+/* Up to 1024px (Tablets) */
+@media only screen and (max-width: 1024px) {
+  .home-content h1 {
+    font-size: 48px;
   }
 
-  .contact-text {
-   width: 100%;
-   height: 450px;
+  .home-content h3 {
+    font-size: 28px;
   }
 
-  .Contact-btn{
-   display: inline-block;
-   width: 80%;
-   height: 40px;
-   font-size: 22px;
-   padding: 5px;
-   border-radius: 18px;
- }
+  .about {
+    flex-direction: column;
+    padding: 50px;
+  }
 
- .contact-list li{
-    text-align: left;
- }
+  .service-list {
+    flex-wrap: wrap;
+  }
 
- .contact-form-box{
-  width: 100%;
-  height: 450px;
- }
+  .box1 {
+    width: 48%;
+    margin: 1%;
+  }
 
- .send-btn, .reset-btn {
-  margin-left: 3%;
-  border-radius: 12px;
-  padding: 10px 20px;
-  display: inline-block;
-  font-size: 20px;
- }
+  .skill-main {
+    grid-template-columns: 1fr;
+  }
 
+  .Project-Container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-text,
+  .contact-form-box {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
